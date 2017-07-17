@@ -323,6 +323,8 @@ G. Polya. How to Solve It (1945)
 J. Armstrong. Making reliable distributed systems in the presence of software errors (2003)
 -------------------------------------------------------------------------------------------
 
+![](/images/books-issue/2/10.jpg)
+
 Эта [открыто доступная][armstrong-thesis] книжка - не книжка даже, а диссертация
 на  соискание  докторской   степени  за  авторством  автора   языка  Erlang  Джо
 Армстронга.  Наткнулся  на  нее  когда   смотрел  видео  [The  Language  of  the
