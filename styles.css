@@ -24,3 +24,7 @@ img {
 .highlight {
   overflow-x: auto;
 }
+
+time {
+  font-style: italic;
+}

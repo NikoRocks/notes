@@ -1,17 +1,12 @@
-## parameters of your blog
-# specify language in which most of your posts are
-lang: ru
-# name of your blog, required
+# name of the blog
 name: me.neoascetic
-
-## 3rd party services (all parameters are optional)
-disqus_shortname: neoascetic
-twitter:
-  username: neoascetic
+lang: ru
 
 ## jekyll settings
 permalink: /:title/
 gems: [jekyll-sitemap, jekyll-redirect-from, jekyll-gist, jekyll-feed, jekyll-seo-tag]
+twitter:
+  username: neoascetic
 
 ## system theme stuff, do not modify unless you know what're you doing
 defaults:

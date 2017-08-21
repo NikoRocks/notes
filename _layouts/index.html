@@ -13,22 +13,9 @@
 <body>
   <h1 class="logo"><a href="/">{{ site.name }}</a></h1>
   <article>
-    {% if page.title %}<h1>{{ page.title }}{% if page.link %}&nbsp;<a href="{{ page.link }}">&infin;</a>{% endif %}</h1>{% endif %}
-    {% if page.date %}<time datetime="{{ page.date|date_to_xmlschema }}">{{ page.date|date_to_long_string }}</time>{% endif %}
-
+    {% if page.title %}<h1>{{ page.title }}{% if page.link %}&nbsp;<a href="{{ page.link }}">&crarr;</a>{% endif %}</h1>{% endif %}
     {{ content }}
-
-    {% unless (page.path == 'index.html' or page.path == '404.html') and site.disqus_shortname %}
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments</noscript>
-      <script>
-        var disqus_title = '{{ page.title }}';
-        var disqus_identifier = window.location.pathname;
-        var disqus_url = '{{ site.github.url }}' + window.location.pathname;
-      </script>
-      <script src="//{{ site.disqus_shortname }}.disqus.com/embed.js" async="async"></script>
-    </div>
-    {% endunless %}
+    {% if page.date %}<time datetime="{{ page.date|date_to_xmlschema }}">{{ page.date|date_to_long_string }}</time>{% endif %}
   </article>
 
   <link rel="stylesheet" href="//rawcdn.githack.com/mojombo/tpw/master/css/syntax.css">
