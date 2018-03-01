@@ -1,128 +1,14 @@
----
-layout: index
-redirect_from: /about/
----
-<div class="hresume">
-  <style>
-    .skill { font-style: italic; }
-    .networks { padding: 0; }
-    .networks li { list-style: none; }
-    @media print {
-      .logo, nav { display: none; }
-      a { color: inherit; text-decoration: inherit; }
-    }
-  </style>
-  <section class="vcard contact">
-    <img class="photo" src="https://www.gravatar.com/avatar/2bfcb4e638dfe30252ba55aa89b10b80.jpg?s=150">
-    <h1 class="fn">Pavel Puchkin</h1>
-    <ul class="networks">
-      <li><a rel="me" href="mailto:i@neoascetic.me">i@neoascetic.me</a></li>
-      <li><a rel="me" href="https://github.com/neoascetic">github.com/neoascetic</a></li>
-      <li><a rel="me" href="https://twitter.com/neoascetic">twitter.com/neoascetic</a></li>
-    </ul>
-    <p class="adr">
-      <span class="country-name">Russia</span>,
-      <del>Vladivostok</del> ✈ <span class="locality">Kaliningrad</span>
-    </p>
-    <p class="summary">
-      I am interested in artificial intelligence and artificial life
-      (especially in computer games) and in neurobiology
-      (regarding intelligence amplification and brain-computer interfaces).
-      I am open to job offers in any of those fields.
-    </p>
-  </section>
-
-  <section>
-    <h1>Professional career:</h1>
-    <ol class="experience">
-      <li value="4" class="vevent">
-        <time class="dtstart">2017</time>&nbsp;&ndash;&nbsp;&hellip;
-        <span class="vcard affilation">
-          <a class="fn org url" href="http://www.alertlogic.com">Alert Logic</a>
-        </span>
-        (<span class="location">remote</span>)
-        <p class="summary">
-          Security as a Service.<br>
-          <span class="skill">Erlang/OTP</span>,
-          <span class="skill">AWS</span>.
-        </p>
-      </li>
-
-      <li value="3" class="vevent">
-        <time class="dtstart">2014</time>&nbsp;&ndash;&nbsp;<time class="dtend">2017</time>
-        <span class="vcard affilation">
-          <a class="fn org url" href="http://dealersocket.com">DealerSocket</a>
-        </span>
-        (<span class="location">Kaliningrad</span>)
-        <p class="summary">
-          Support of the old and development of the new modular website
-          platform for the US and Canadian auto dealers.<br>
-          <span class="skill">PHP/Symfony</span>,
-          <span class="skill">Python</span>,
-          <span class="skill">Lua/OpenResty</span>,
-          <span class="skill">Celery</span>,
-          <span class="skill">Sphinx</span>,
-          <span class="skill">Redis</span>,
-          <span class="skill">MySQL</span>,
-          <span class="skill">AWS</span>,
-          <span class="skill">Serverless</span>,
-          <span class="skill">Docker</span>.
-        </p>
-      </li>
-
-      <li value="2" class="vevent">
-        <time class="dtstart">2012</time>&nbsp;&ndash;&nbsp;<time class="dtend">2014</time>
-        <span class="vcard affilation">
-          <a class="fn org url" href="http://монастырёв.рф">МОНАСТЫРЁВ.рф</a>
-        </span>
-        (<span class="location">Vladivostok</span>)
-        <p class="summary">
-          Websites development for different branches of that,
-          initially pharmaceutical, holding.
-          Data exchange between wholesale and retail information systems,
-          automated testing introduction,
-          propaganda of git instead of subversion...<br>
-          <span class="skill">Python/Django</span>,
-          <span class="skill">PHP/Laravel 3/4</span>,
-          <span class="skill">MySQL/MariaDB</span>,
-          <span class="skill">InterSystems Caché</span>,
-          <span class="skill">MSSQL</span>,
-          <span class="skill">PostgreSQL</span>.
-        </p>
-      </li>
-
-      <li value="1" class="vevent">
-        <time class="dtstart">2011</time>&nbsp;&ndash;&nbsp;<time class="dtend">2012</time>
-        <span class="vcard affilation fn org">Holiday Autos Asia</span>
-        (<span class="location">remote</span>)
-        <p class="summary">
-          This used to be a startup with the idea to bring Holiday Autos
-          company services (vehicles rental) to the Asian market,
-          especially to China.
-          I was working on backend system support and also on integration
-          between websites of other offices (South Africa, France)
-          with our backend.<br>
-          <span class="skill">Python/Django</span>,
-          <span class="skill">MySQL</span>,
-          <span class="skill">AWS</span>.
-        </p>
-      </li>
-    </ol>
-  </section>
-</div>
-
-<nav>
-  <h1>I also write from time to time:</h1>
-  {% for post in site.posts %}
-    {% assign currentdate = post.date|date:"%Y" %}
-    {% if currentdate != date %}
-      {% if date %}</ul>{% endif %}
-      <time datetime="{{ post.date|date:"%Y" }}">{{ currentdate }}</time>
-      {% assign date = currentdate %}
-      <ul>
-    {% endif %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;{% if post.link %}<a href="{{ post.link }}">&crarr;</a>&nbsp;{% endif %}<time pubdate="{{ post.date|date_to_xmlschema }}">{{ post.date|date:"%d/%m" }}</time>
-    </li>
-  {% endfor %}
-</nav>
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset=utf-8>
+    <title>Pavel Puchkin</title>
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet"></head>
+  <body style="text-align: center;
+               font-family: 'Annie Use Your Telescope', cursive;
+               font-size: 2rem;
+               position: relative; top: 50%; transform: translateY(-65%)">
+    <h1>Yeah, that's me, Pavel</h1>
+    <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/725836?s=150">
+    <div>Doing Stuff No One Cares About</div>
+    <div><a href="mailto:hi@neoascetic.me">hi@neoascetic.me</a></div>
